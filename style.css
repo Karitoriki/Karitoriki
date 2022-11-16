@@ -18,24 +18,16 @@ main {
   position: relative;
   z-index: 2;
   transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  color: beige;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-main > div{
-    text-transform: uppercase;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    color: beige;
-    font-size: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
+.myText{
+  margin: 0%
 }
-
-main > div > h1{
-    font-size: 120px;
-    margin: 0px;
-}
-
 
 body[data-nav="true"] > main {
   transform: translateY(-50%);
