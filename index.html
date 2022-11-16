@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      const toggleNav = () => {
+        document.body.dataset.nav =
+          document.body.dataset.nav === "true" ? "false" : "true";
+      };
+    </script>
+  </head>
+  <body data-nav="false">
+    <main>
+      <div>
+        <h1>Karitoriki</h1>
+        <p>text</p>
+      </div>
+    </main>
+
+    <nav>
+      <div id="nav-links">
+        <a class="nav-link" href="https://www.twitch.tv/moderator/kawatarotb">
+          <h2 class="nav-link-label rubik-font">Kawataro</h2>
+          <img
+            class="nav-link-image"
+            src="images/goth_kawa.png"
+          />
+        </a>
+        <a class="nav-link" href="https://www.twitch.tv/atiredstudent">
+          <h2 class="nav-link-label rubik-font">Morgan</h2>
+          <img
+            class="nav-link-image"
+            src="images/goth_morgan.png"
+          />
+        </a>
+        <a class="nav-link" href="https://www.twitch.tv/ailinlive">
+            <h2 class="nav-link-label rubik-font">Ailin</h2>
+            <img
+              class="nav-link-image"
+              src="images/ailin.png"
+            />
+          </a>
+      </div>
+    </nav>
+
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+      <i class="open fa fa-plus"></i>
+      <i class="close fa fa-minus"></i>
+    </button>
+  </body>
+</html>
